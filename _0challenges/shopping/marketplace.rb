@@ -9,11 +9,10 @@ class Marketplace
     end
 
     def buy
-        puts "\n--- Total de compras ---"
+        puts "\n   --- Total de compras ---"
         products.each do |product|
             width = product.name.length
             puts "Produto: #{product.name} #{"."*(15 - width)} R$#{product.price}"
         end
     end
-
 end
