@@ -1,5 +1,3 @@
-capit = -> (name){puts "#{name.capitalize()}"}
-
 def capitalize_name(capit)
     print "Digite o primeiro nome: "
     first_name = gets.chomp
@@ -11,4 +9,5 @@ def capitalize_name(capit)
     capit.call(second_name)
 end
 
+capit = -> (name){puts "#{name.capitalize()}"}
 capitalize_name(capit)
